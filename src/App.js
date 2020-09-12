@@ -1,24 +1,36 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
+
+import QuoteBox from "./components/quote-box";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="container">
+      <QuoteBox />
+      <p style={{ color: "#ffff" }}>
+        {"by "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          style={{ textDecoration: "none", color: "#ffff" }}
+          id="tweet-quote"
+          href="https://www.linkedin.com/in/vishal345/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Vishal
         </a>
-      </header>
+      </p>
+      <p style={{ color: "#ffff" }}>
+        {"Using "}
+        <a
+          style={{ textDecoration: "none", color: "#ffff" }}
+          id="tweet-quote"
+          href="https://github.com/lukePeavey/quotable"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Quotable API
+        </a>
+      </p>
     </div>
   );
 }

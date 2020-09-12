@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  #quote-box {
+    height: 50%;
+    width: 40%;
+    background-color: #ffff;
+    padding: 40px 60px;
+  }
+  #quote-text {
+    font-size: 1.4rem;
+    text-align: center;
+    height: 10rem;
+    #text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 500;
+    }
+  }
+  #author {
+    display: flex;
+    flex-flow: row-reverse;
+    height: 40%;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0rem;
+    align-content: flex-end;
+    .tweet-quote {
+      text-decoration: none;
+      fill: white;
+    }
+    .ml-5 {
+      margin-left: 5%;
+    }
+    .tweet-quote,
+    #new-quote {
+      padding: 5px 10px;
+      font-size: 15px;
+      background-color: blueviolet;
+      border: none;
+      color: white;
+      box-shadow: none;
+      cursor: pointer;
+      border-radius: 5%;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    #new-quote {
+      margin-left: auto;
+    }
+  }
+}

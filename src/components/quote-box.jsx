@@ -73,11 +73,12 @@ class QuoteBox extends React.Component {
           <p id="text" style={{ color: color }}>
             {this.state.randomQuote
               ? this.state.randomQuote.content
-              : "Loading Quote..."}
+              : "Any app that can be written in JavaScript, will eventually be written in JavaScript."}
           </p>
         </div>
         <div id="author" style={{ color: color }}>
-          -{this.state.randomQuote ? this.state.randomQuote.author : ""}
+          -
+          {this.state.randomQuote ? this.state.randomQuote.author : "Anonymous"}
         </div>
         <div className="buttons">
           <a

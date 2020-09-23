@@ -8,7 +8,7 @@ function App() {
     <div className="container">
       <QuoteBox />
       <p style={{ color: "#ffff" }}>
-        {"by "}
+        {"By "}
         <a
           style={{ textDecoration: "none", color: "#ffff" }}
           id="tweet-quote"
